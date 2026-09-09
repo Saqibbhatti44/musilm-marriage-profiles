@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Al-Nikah Matrimonial</title>
+<meta name="description" content="Get in touch with Al-Nikah Matrimonial Bureau to register your profile or enquire about a marriage match.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="fa-solid fa-envelope me-1"></i> <a href="mailto:info@alnikahmatrimonial.com">info@alnikahmatrimonial.com</a>
+        <span class="topbar-sep">|</span>
+        <i class="fa-solid fa-phone me-1"></i> <a href="tel:+922112345678">+92 21 1234 5678</a>
+      </div>
+      <div><i class="fa-solid fa-shield-halved me-1"></i> Confidential &amp; Admin-Verified Profiles</div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom" href="index.html">
+        <span class="brand-icon"><i class="fa-solid fa-moon"></i></span>
+        <span class="brand-text">Al-Nikah<span>Matrimonial Bureau</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav main-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="profiles.html">Marriage Profiles</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a href="profiles.html" class="btn btn-gold btn-sm-pill px-4">View Profiles</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="breadcrumb-custom"><a href="index.html">Home</a><span class="sep">/</span>Contact Us</div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="contact-info-card">
+          <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h5 style="font-size:1rem;">Our Office</h5>
+            <p class="text-muted-soft mb-0" style="font-size:.9rem;">Block 5, Gulshan-e-Iqbal, Karachi, Pakistan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-info-card">
+          <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <h5 style="font-size:1rem;">Call Us</h5>
+            <p class="text-muted-soft mb-0" style="font-size:.9rem;">+92 21 1234 5678<br>Mon – Sat, 10am – 7pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-info-card">
+          <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <h5 style="font-size:1rem;">Email Us</h5>
+            <p class="text-muted-soft mb-0" style="font-size:.9rem;">info@alnikahmatrimonial.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="contact-form-card">
+          <span class="eyebrow">Enquire About a Profile</span>
+          <h3 class="mb-3">Send Us a Message</h3>
+
+          <div class="enquiry-alert" id="profileEnquiryNote" style="display:none;">
+            <i class="fa-solid fa-circle-info"></i>
+            <div>You are enquiring about profile <strong id="enquiryProfileDisplay"></strong>. Our team will contact you shortly with further details after reviewing your message.</div>
+          </div>
+
+          <p class="text-muted-soft mb-4">Whether you'd like to register a profile, enquire about a specific match, or ask a general question — fill out the form below and our team will respond within 24 hours.</p>
+
+          <form class="js-demo-form" id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" placeholder="Your full name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email Address *</label>
+                <input type="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" placeholder="+92 300 1234567" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Enquiry Regarding Profile ID <span class="text-muted-soft">(optional)</span></label>
+                <input type="text" class="form-control" id="enquiryProfileId" placeholder="e.g. MP-1025 - Muhammad Ahmed">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message *</label>
+                <textarea class="form-control" rows="5" placeholder="Tell us about your requirements, or ask about a specific profile..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message <i class="fa-solid fa-paper-plane ms-1"></i></button>
+              </div>
+            </div>
+          </form>
+
+          <div class="alert alert-success d-none js-form-success mt-3">
+            <i class="fa-solid fa-circle-check me-1"></i> Thank you! Your message has been received. Our team will get back to you shortly. (Demo form — no data is actually sent.)
+          </div>
+
+          <div class="privacy-note mt-3">
+            <i class="fa-solid fa-lock"></i> Your information is kept strictly confidential and will only be used to respond to your enquiry.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="map-wrap mb-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14481.0!2d67.0822!3d24.8608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!5e0!3m2!1sen!2s!4v1610000000000"
+            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" title="Office Location Map"></iframe>
+        </div>
+        <div class="sidebar-cta-card">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h4>Prefer to Talk in Person?</h4>
+          <p>Visit our office for a confidential consultation with our matrimonial coordinators.</p>
+          <a href="tel:+922112345678" class="btn btn-gold w-100">Call +92 21 1234 5678</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <span class="brand-icon"><i class="fa-solid fa-moon"></i></span>
+          <span class="brand-text">Al-Nikah<span>Matrimonial Bureau</span></span>
+        </div>
+        <p>A trusted, admin-managed Muslim matrimonial service helping families find sincere, compatible marriage matches with privacy and dignity.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="profiles.html">Marriage Profiles</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Legal</h5>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Contact</h5>
+        <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Block 5, Gulshan-e-Iqbal, Karachi, Pakistan</span></div>
+        <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><span>+92 21 1234 5678</span></div>
+        <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><span>info@alnikahmatrimonial.com</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center"><p class="mb-0">&copy; 2025 Al-Nikah Matrimonial Bureau. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var params = new URLSearchParams(window.location.search);
+    var profileId = params.get('profile');
+    if (profileId) {
+      var note = document.getElementById('profileEnquiryNote');
+      var display = document.getElementById('enquiryProfileDisplay');
+      var input = document.getElementById('enquiryProfileId');
+      if (note && display) {
+        display.textContent = profileId;
+        note.style.display = 'flex';
+      }
+      if (input) input.value = profileId;
+    }
+  });
+</script>
+</body>
+</html>

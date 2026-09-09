@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marriage Profile Detail — Al-Nikah Matrimonial</title>
+<meta name="description" content="View detailed marriage profile information including personal, education, family and religious background.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="fa-solid fa-envelope me-1"></i> <a href="mailto:info@alnikahmatrimonial.com">info@alnikahmatrimonial.com</a>
+        <span class="topbar-sep">|</span>
+        <i class="fa-solid fa-phone me-1"></i> <a href="tel:+922112345678">+92 21 1234 5678</a>
+      </div>
+      <div><i class="fa-solid fa-shield-halved me-1"></i> Confidential &amp; Admin-Verified Profiles</div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom" href="index.html">
+        <span class="brand-icon"><i class="fa-solid fa-moon"></i></span>
+        <span class="brand-text">Al-Nikah<span>Matrimonial Bureau</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav main-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="profiles.html">Marriage Profiles</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a href="profiles.html" class="btn btn-gold btn-sm-pill px-4">View Profiles</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="page-banner pb-4">
+  <div class="container">
+    <h1 id="pd-breadcrumb-name">Profile Detail</h1>
+    <div class="breadcrumb-custom"><a href="index.html">Home</a><span class="sep">/</span><a href="profiles.html">Marriage Profiles</a><span class="sep">/</span>Profile Detail</div>
+  </div>
+</section>
+
+<div id="profileDetailRoot">
+<section class="section-pad pt-5">
+  <div class="container">
+
+    <!-- ===== PROFILE HERO ===== -->
+    <div class="profile-hero mb-4">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-4">
+          <div class="profile-hero-photo">
+            <img id="pd-photo" src="" alt="Profile Photo">
+            <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Admin Verified</span>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <span class="id-chip" id="pd-id">MP-0000</span>
+          <h2 id="pd-name" class="mb-2">Name</h2>
+          <p class="text-muted-soft mb-4" id="pd-headline">Gender, Age &bull; City, Country</p>
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-3">
+              <div class="text-center p-3 bg-cream-dark rounded-3">
+                <i class="fa-solid fa-cake-candles text-gold d-block mb-1"></i>
+                <small class="text-muted-soft d-block">Age</small>
+                <strong id="pd-age-mini"></strong>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="text-center p-3 bg-cream-dark rounded-3">
+                <i class="fa-solid fa-ruler-vertical text-gold d-block mb-1"></i>
+                <small class="text-muted-soft d-block">Height</small>
+                <strong id="pd-height-mini"></strong>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="text-center p-3 bg-cream-dark rounded-3">
+                <i class="fa-solid fa-graduation-cap text-gold d-block mb-1"></i>
+                <small class="text-muted-soft d-block">Education</small>
+                <strong id="pd-education-mini"></strong>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="text-center p-3 bg-cream-dark rounded-3">
+                <i class="fa-solid fa-briefcase text-gold d-block mb-1"></i>
+                <small class="text-muted-soft d-block">Profession</small>
+                <strong id="pd-profession-mini"></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+
+        <!-- Personal Information -->
+        <div class="detail-section">
+          <h3><i class="fa-solid fa-id-card"></i> Personal Information</h3>
+          <div class="info-grid">
+            <div class="info-item"><span class="label">Age</span><span class="value" id="pd-age"></span></div>
+            <div class="info-item"><span class="label">Gender</span><span class="value" id="pd-gender"></span></div>
+            <div class="info-item"><span class="label">Height</span><span class="value" id="pd-height"></span></div>
+            <div class="info-item"><span class="label">Marital Status</span><span class="value" id="pd-status"></span></div>
+            <div class="info-item"><span class="label">City</span><span class="value" id="pd-city"></span></div>
+            <div class="info-item"><span class="label">Country</span><span class="value" id="pd-country"></span></div>
+            <div class="info-item"><span class="label">Nationality</span><span class="value" id="pd-nationality"></span></div>
+          </div>
+        </div>
+
+        <!-- Education & Career -->
+        <div class="detail-section">
+          <h3><i class="fa-solid fa-user-graduate"></i> Education &amp; Career</h3>
+          <div class="info-grid">
+            <div class="info-item"><span class="label">Education</span><span class="value" id="pd-education"></span></div>
+            <div class="info-item"><span class="label">Profession</span><span class="value" id="pd-profession"></span></div>
+            <div class="info-item"><span class="label">Occupation</span><span class="value" id="pd-occupation"></span></div>
+            <div class="info-item"><span class="label">Income</span><span class="value" id="pd-income"></span></div>
+          </div>
+        </div>
+
+        <!-- Family Information -->
+        <div class="detail-section">
+          <h3><i class="fa-solid fa-people-roof"></i> Family Information</h3>
+          <div class="info-item mb-3">
+            <span class="label">Family Background</span>
+            <span class="value fw-normal" id="pd-family-bg"></span>
+          </div>
+          <div class="info-grid">
+            <div class="info-item"><span class="label">Father's Occupation</span><span class="value" id="pd-father"></span></div>
+            <div class="info-item"><span class="label">Mother's Occupation</span><span class="value" id="pd-mother"></span></div>
+            <div class="info-item"><span class="label">Siblings</span><span class="value" id="pd-siblings"></span></div>
+          </div>
+        </div>
+
+        <!-- Religious Information -->
+        <div class="detail-section">
+          <h3><i class="fa-solid fa-mosque"></i> Religious Information</h3>
+          <div class="info-grid">
+            <div class="info-item"><span class="label">Religion</span><span class="value" id="pd-religion"></span></div>
+            <div class="info-item"><span class="label">Sect</span><span class="value" id="pd-sect"></span></div>
+            <div class="info-item"><span class="label">Religious Practice</span><span class="value" id="pd-practice"></span></div>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="detail-section">
+          <h3><i class="fa-solid fa-circle-info"></i> About This Profile</h3>
+          <p class="about-text mb-0" id="pd-about"></p>
+        </div>
+
+        <!-- Partner Preference -->
+        <div class="detail-section mb-0">
+          <h3><i class="fa-solid fa-heart-circle-check"></i> Partner Preference</h3>
+          <div class="info-grid">
+            <div class="info-item"><span class="label">Age Preference</span><span class="value" id="pd-pref-age"></span></div>
+            <div class="info-item"><span class="label">Education Preference</span><span class="value" id="pd-pref-education"></span></div>
+            <div class="info-item"><span class="label">Location Preference</span><span class="value" id="pd-pref-location"></span></div>
+            <div class="info-item"><span class="label">Other Requirements</span><span class="value" id="pd-pref-other"></span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== SIDEBAR ===== -->
+      <div class="col-lg-4">
+        <div class="sidebar-cta-card mb-4">
+          <i class="fa-solid fa-envelope-open-text"></i>
+          <h4>Interested in This Profile?</h4>
+          <p>Contact our team to enquire about this profile. We will facilitate a respectful introduction between families.</p>
+          <a href="#" id="enquiryContactLink" class="btn btn-gold w-100">Contact Us About This Profile</a>
+        </div>
+
+        <div class="privacy-note">
+          <i class="fa-solid fa-lock"></i> For the privacy and safety of our members, personal contact information is not published on this page. All enquiries are handled directly by our office.
+        </div>
+
+        <div class="filter-panel mt-4">
+          <h5><i class="fa-solid fa-shield-halved text-gold"></i> Verified By Admin</h5>
+          <p class="text-muted-soft mb-0" style="font-size:.9rem;">This profile has been personally reviewed by our matrimonial team for authenticity before being published.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Similar Profiles -->
+    <div class="mt-5">
+      <h3 class="mb-4">Similar Profiles You May Consider</h3>
+      <div class="row g-4" id="similarProfilesGrid"></div>
+    </div>
+
+  </div>
+</section>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <span class="brand-icon"><i class="fa-solid fa-moon"></i></span>
+          <span class="brand-text">Al-Nikah<span>Matrimonial Bureau</span></span>
+        </div>
+        <p>A trusted, admin-managed Muslim matrimonial service helping families find sincere, compatible marriage matches with privacy and dignity.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="profiles.html">Marriage Profiles</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Legal</h5>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Contact</h5>
+        <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Block 5, Gulshan-e-Iqbal, Karachi, Pakistan</span></div>
+        <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><span>+92 21 1234 5678</span></div>
+        <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><span>info@alnikahmatrimonial.com</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center"><p class="mb-0">&copy; 2025 Al-Nikah Matrimonial Bureau. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
